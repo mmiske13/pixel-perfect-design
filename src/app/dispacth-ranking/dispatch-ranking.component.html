@@ -1,0 +1,125 @@
+<div class="artboard-1">
+    <div class="rect-1">
+        <span class="dispatch-ranking poppins-bold">Dispatch ranking</span>
+        <div class="rects-wrapper">
+            <div class="rect-left">
+                <span class="Gross_per_truck poppins-regular">Gross per truck</span>
+                <div class="rect-left-inner-wrapper">
+                    <div class="Rectangle_3_copy_28">
+                        <span class="Active poppins-regular">Active</span>
+                        <span class="_4_329 poppins-bold">$5.422</span>
+                    </div>
+                    <div class="Rectangle_3_copy_28">
+                        <span class="All_trucks poppins-regular">All trucks</span>
+                        <span class="_4_329 poppins-bold">$4.329</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rect-right">
+                <span class="Rate_per_mile poppins-regular">Rate per mile</span>
+                <div class="Rectangle_3_copy_30">
+                    <span class="_2_15 poppins-bold">$2.15</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            <div class="table">
+                <div class="row header">
+                    <div class="header-cell"></div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell dispatcher-header">Dispatcher</div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell">Trucks</div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell">Gross</div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell" style="padding-top: 17px;"><img ngSrc="../info-icon.png" height="17"
+                                                                             width="17" alt=""/></div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell">RPM</div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell" style="padding-top: 17px;"><img ngSrc="info-icon.png" height="17"
+                                                                             width="17" alt=""/></div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell">Mileage</div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell" style="padding-top: 6px;">Gross per truck</div>
+                    <div class="header-cell"></div>
+                    <div class="header-cell" style="padding-top: 17px;"><img ngSrc="info-icon.png" height="17"
+                                                                             width="17" alt=""/></div>
+                    <div class="header-cell"></div>
+                </div>
+
+                <div class="row" *ngFor="let dispatcher of dispatchersData">
+                    <div class="item-cell"></div>
+                    <div class="item-cell">{{ dispatcher.id }}</div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell dispatcher-name">{{ dispatcher.name }}</div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell">{{ dispatcher.rating }}</div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell">{{ dispatcher.earnings }}</div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell">
+                            <span
+                                    [class.positive]="dispatcher.earningsChange.startsWith('+')"
+                                    [class.negative]="dispatcher.earningsChange.startsWith('-')"
+                            >
+                                {{ dispatcher.earningsChange }}
+                            </span>
+                    </div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell">{{ dispatcher.price }}</div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell">
+                            <span
+                                    [class.positive]="dispatcher.priceChange.startsWith('+')"
+                                    [class.negative]="dispatcher.priceChange.startsWith('-')">
+                                    {{ dispatcher.priceChange }}
+                            </span>
+                    </div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell">{{ dispatcher.deliveries }}</div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell">{{ dispatcher.commission }}</div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell">
+                            <span
+                                    [class.positive]="dispatcher.commissionChange.startsWith('+')"
+                                    [class.negative]="dispatcher.commissionChange.startsWith('-')">
+                                    {{ dispatcher.commissionChange }}
+                            </span>
+                    </div>
+                    <div class="item-cell"></div>
+                </div>
+
+                <div class="row" style="background-color: #f3f8ff">
+                    <div class="item-cell"></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell dispatcher-name" style="margin-left: 43px">Average</div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell">9.5</div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"><span class="positive">$51.700</span></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"><span class="positive">$2.15</span></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"><span class="positive">168.607</span></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"><span class="positive">$5.442</span></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"></div>
+                    <div class="item-cell"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
