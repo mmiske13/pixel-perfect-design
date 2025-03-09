@@ -1,0 +1,639 @@
+<main class="main">
+    <div class="navigation">
+        <a [routerLink]="['dispatch-ranking']">Dispatch Ranking</a>
+        <a [routerLink]="['dispatch-reward-system']">Dispatch Reward System</a>
+        <a [routerLink]="['set-target-modal']">Set Target</a>
+    </div>
+    <router-outlet/>
+<!--    <div class="Artboard_2">-->
+<!--    <div class="artboard_2-container">-->
+<!--        <div class="Rectangle_3">-->
+<!--            <div class="Rectangle_3_copy_65">-->
+<!--                <div style="display: flex; justify-content: space-between">-->
+<!--                    <div style="display: flex; flex-direction: column; gap: 15px; margin: 9px 28px 0 16px">-->
+<!--                        <span class="Dispatch">Dispatch</span>-->
+<!--                        <span class="reward_system">reward system</span>-->
+<!--                    </div>-->
+
+<!--                    <div style="display: flex; gap: 9px; margin-top: 14px">-->
+<!--                        <div class="Rectangle_3_copy_71">-->
+<!--                            <span class="This_week_2">This week</span>-->
+<!--                            <span class="_46" style="color: white; margin-top: 15px;">46</span>-->
+<!--                            <div style="margin-top: 13px; display: flex; align-items: center; justify-content: center">-->
+<!--                                <span class="_6_850" style="color: white; font-weight: 400;">$6.850</span>-->
+<!--                                <div class="Line_1" style="background-color: white"></div>-->
+<!--                                <span class="_2_18" style="color: white; font-weight: 400;">$2.18</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="Rectangle_3_copy_72">-->
+<!--                            <div style="display: flex; justify-content: center">-->
+<!--                                <span class="Jul_1___Jul_7">Jul 1 - Jul 7</span>-->
+<!--                            </div>-->
+<!--                            <span class="_46">46</span>-->
+<!--                            <div style="margin-top: 13px; display: flex; align-items: center; justify-content: center">-->
+<!--                                <span class="_6_850">$6.850</span>-->
+<!--                                <div class="Line_1"></div>-->
+<!--                                <span class="_2_18">$2.18</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="Rectangle_3_copy_72">-->
+<!--                            <div style="display: flex; justify-content: center">-->
+<!--                                <span class="Jul_1___Jul_7">Jun 24 - Jun 30</span>-->
+<!--                            </div>-->
+<!--                            <span class="_46">46</span>-->
+<!--                            <div style="margin-top: 13px; display: flex; align-items: center; justify-content: center">-->
+<!--                                <span class="_6_850">$6.850</span>-->
+<!--                                <div class="Line_1"></div>-->
+<!--                                <span class="_2_18">$2.18</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="Rectangle_3_copy_72">-->
+<!--                            <div style="display: flex; justify-content: center">-->
+<!--                                <span class="Jul_1___Jul_7">Jun 17 - Jun 23</span>-->
+<!--                            </div>-->
+<!--                            <span class="_46">46</span>-->
+<!--                            <div style="margin-top: 13px; display: flex; align-items: center; justify-content: center">-->
+<!--                                <span class="_6_850">$6.850</span>-->
+<!--                                <div class="Line_1"></div>-->
+<!--                                <span class="_2_18">$2.18</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="Rectangle_3_copy_72">-->
+<!--                            <div style="display: flex; justify-content: center">-->
+<!--                                <span class="Jul_1___Jul_7">Jun 10 - Jun 16</span>-->
+<!--                            </div>-->
+<!--                            <span class="_46">46</span>-->
+<!--                            <div style="margin-top: 13px; display: flex; align-items: center; justify-content: center">-->
+<!--                                <span class="_6_850">$6.850</span>-->
+<!--                                <div class="Line_1"></div>-->
+<!--                                <span class="_2_18">$2.18</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="Rectangle_3_copy_67">-->
+<!--                        <img ngSrc="cog.png" height="24" width="24" alt=""/>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div style="display: flex; margin-left: 28%">-->
+<!--                    <div class="Rectangle_3_copy_26_2">-->
+<!--                        <span class="Target">Target</span>-->
+<!--                        <div style="display: flex; gap: 10px; margin-inline: 12px; margin-top: 14px">-->
+<!--                            <div class="Rectangle_3_copy_28_2">-->
+<!--                                <span class="Gross_per_truck_2">Gross per truck</span>-->
+<!--                                <div class="_6_850_2">$6.850</div>-->
+<!--                                <div class="_15__sucess_rate">15% sucess rate</div>-->
+<!--                            </div>-->
+<!--                            <div class="Rectangle_3_copy_28_2">-->
+<!--                                <span class="Gross_per_truck_2">Rate per mile</span>-->
+<!--                                <div class="_6_850_2">$2.18</div>-->
+<!--                                <div class="_15__sucess_rate">29% sucess rate</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="Rectangle_3_copy_27" style="margin-right: 13px">-->
+<!--                        <span class="Target">Success rate</span>-->
+<!--                        <div class="_44_">44%</div>-->
+<!--                    </div>-->
+<!--                    <div class="Rectangle_3_copy_27">-->
+<!--                        <span class="Target">Bonus achieved</span>-->
+<!--                        <div class="_44_">56</div>-->
+<!--                        <span class="times">times</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+<!--            <div style="width: 100%; height: 200px; margin-left: 28px; margin-right: 43px; display: flex; flex-direction: column">-->
+<!--                <div style="display: flex; gap: 7px; margin-bottom: 8px">-->
+<!--                    <div class="Rectangle_3_copy_68_2"><span class="Drivers">Drivers</span></div>-->
+<!--                    <div class="Rectangle_3_copy_68_3"><span class="Drivers Trucks">Trucks</span></div>-->
+<!--                </div>-->
+
+<!--                <div class="Rectangle_3_copy_50_2">-->
+<!--                    <div class="Rectangle_3_copy_22_2">-->
+<!--                        <span class="Search_driver">Search driver</span>-->
+<!--                    </div>-->
+<!--                    <div class="Rectangle_3_copy_22_2">-->
+<!--                        <span class="Search_driver">All dispatchers</span>-->
+<!--                        <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                    </div>-->
+<!--                    <div class="Rectangle_3_copy_22_2">-->
+<!--                        <span class="Search_driver">All positions</span>-->
+<!--                        <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                    </div>-->
+<!--                    <div class="Rectangle_3_copy_22_2">-->
+<!--                        <span class="Search_driver">All types</span>-->
+<!--                        <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div style="width: 1199px; height: 30px; margin-top: 14px; display:flex; justify-content: flex-end; align-items: center; gap: 14px;">-->
+<!--                    <span class="Search_driver">Sort by</span>-->
+<!--                    <div class="Rectangle_3_copy_51">-->
+<!--                        <span class="Search_driver" style="padding-right: 22px">Gross - Highest to lowest</span>-->
+<!--                        <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div style="display: flex; margin-top: 19px; flex-direction: column; gap: 9px">-->
+
+<!--                    <div class="Rectangle_3_copy_31">-->
+<!--                        <div style="margin: 10px 0 0 15px">-->
+<!--                                <span class="Frederick_Robinson">Frederick <span-->
+<!--                                        style="font-weight: 600">Robinson</span></span>-->
+<!--                            <div style="display: flex; gap: 29px">-->
+<!--                                <div style="display: flex; align-items: center; gap: 7px">-->
+<!--                                    <img ngSrc="dispatcher.png" height="19" width="17" alt=""/>-->
+<!--                                    <span class="Greg_R__copy_2">Greg R.</span>-->
+<!--                                </div>-->
+<!--                                <div style="display: flex; align-items: center; gap: 6px">-->
+<!--                                    <img ngSrc="truck.png" height="21" width="19" alt=""/>-->
+<!--                                    <span class="Greg_R__copy_2">7994</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div style="margin-left: 95px; margin-top: 18px">-->
+<!--                            <div style="display: flex; align-items: center;">-->
+<!--                                <span class="Gross-4">Gross</span>-->
+<!--                                <div class="Rectangle_3_copy_32">-->
+<!--                                    <div class="Rectangle_3_copy_35" style="width: 328px">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="Rectangle_3_copy_37">-->
+<!--                                        <span class="_56_">56%</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_41_2">-->
+<!--                                    <span class="_5_460_4">$5.460</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <span class="miles-5">2.527 miles</span>-->
+<!--                            <div style="display: flex; align-items: center; margin-left: 10px">-->
+<!--                                <span class="Gross-4">RPM</span>-->
+<!--                                <div class="Rectangle_3_copy_32">-->
+<!--                                    <div class="Rectangle_3_copy_35" style="width: 490px">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="Rectangle_3_copy_37">-->
+<!--                                        <span class="_56_">87%</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_41_2">-->
+<!--                                    <span class="_5_460_4">$2.16</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div style="display: flex; align-items: center; margin-left: 45px">-->
+<!--                            <div class="Rectangle_3_copy_46">-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <span class="_14_pts">+14 pts</span>-->
+<!--                    </div>-->
+
+<!--                    <div class="Rectangle_3_copy_31">-->
+<!--                        <div style="margin: 10px 0 0 15px">-->
+<!--                                <span class="Frederick_Robinson">Frederick <span-->
+<!--                                        style="font-weight: 600">Robinson</span></span>-->
+<!--                            <div style="display: flex; gap: 29px">-->
+<!--                                <div style="display: flex; align-items: center; gap: 7px">-->
+<!--                                    <img ngSrc="dispatcher.png" height="19" width="17" alt=""/>-->
+<!--                                    <span class="Greg_R__copy_2">Greg R.</span>-->
+<!--                                </div>-->
+<!--                                <div style="display: flex; align-items: center; gap: 6px">-->
+<!--                                    <img ngSrc="truck.png" height="21" width="19" alt=""/>-->
+<!--                                    <span class="Greg_R__copy_2">7994</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div style="margin-left: 95px; margin-top: 18px">-->
+<!--                            <div style="display: flex; align-items: center;">-->
+<!--                                <span class="Gross-4">Gross</span>-->
+<!--                                <div class="Rectangle_3_copy_32">-->
+<!--                                    <div class="Rectangle_3_copy_35" style="width: 578px">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="Rectangle_3_copy_37 Rectangle_3_copy_39">-->
+<!--                                        <span class="_56_">106%</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_41_2 Rectangle_3_copy_43">-->
+<!--                                    <span class="_5_460_4">$7.300</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <span class="miles-5">3.273 miles</span>-->
+<!--                            <div style="display: flex; align-items: center; margin-left: 10px">-->
+<!--                                <span class="Gross-4">RPM</span>-->
+<!--                                <div class="Rectangle_3_copy_32">-->
+<!--                                    <div class="Rectangle_3_copy_35" style="width: 578px">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="Rectangle_3_copy_37 Rectangle_3_copy_39">-->
+<!--                                        <span class="_56_">102%</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_41_2 Rectangle_3_copy_43">-->
+<!--                                    <span class="_5_460_4">$2.23</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div style="display: flex; align-items: center; margin-left: 45px">-->
+<!--                            <div class="Rectangle_3_copy_46 Rectangle_3_copy_45">-->
+<!--                                <img ngSrc="check.png" height="43" width="43" alt=""/>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <span class="_14_pts">+28 pts</span>-->
+<!--                    </div>-->
+
+<!--                    <div class="Rectangle_3_copy_31">-->
+<!--                        <div style="margin: 10px 0 0 15px">-->
+<!--                                <span class="Frederick_Robinson">Frederick <span-->
+<!--                                        style="font-weight: 600">Robinson</span></span>-->
+<!--                            <div style="display: flex; gap: 29px">-->
+<!--                                <div style="display: flex; align-items: center; gap: 7px">-->
+<!--                                    <img ngSrc="dispatcher.png" height="19" width="17" alt=""/>-->
+<!--                                    <span class="Greg_R__copy_2">Greg R.</span>-->
+<!--                                </div>-->
+<!--                                <div style="display: flex; align-items: center; gap: 6px">-->
+<!--                                    <img ngSrc="truck.png" height="21" width="19" alt=""/>-->
+<!--                                    <span class="Greg_R__copy_2">7994</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div style="margin-left: 95px; margin-top: 18px">-->
+<!--                            <div style="display: flex; align-items: center;">-->
+<!--                                <span class="Gross-4">Gross</span>-->
+<!--                                <div class="Rectangle_3_copy_32">-->
+<!--                                    <div class="Rectangle_3_copy_35" style="width: 557px">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="Rectangle_3_copy_37">-->
+<!--                                        <span class="_56_">94%</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_41_2">-->
+<!--                                    <span class="_5_460_4">$5.460</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <span class="miles-5">2.527 miles</span>-->
+<!--                            <div style="display: flex; align-items: center; margin-left: 10px">-->
+<!--                                <span class="Gross-4">RPM</span>-->
+<!--                                <div class="Rectangle_3_copy_32">-->
+<!--                                    <div class="Rectangle_3_copy_35" style="width: 490px">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="Rectangle_3_copy_37">-->
+<!--                                        <span class="_56_">87%</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_41_2">-->
+<!--                                    <span class="_5_460_4">$2.16</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div style="display: flex; align-items: center; margin-left: 45px">-->
+<!--                            <div class="Rectangle_3_copy_46">-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <span class="_14_pts">+18 pts</span>-->
+<!--                    </div>-->
+
+<!--                    <div class="Rectangle_3_copy_31">-->
+<!--                        <div style="margin: 10px 0 0 15px">-->
+<!--                                <span class="Frederick_Robinson">Frederick <span-->
+<!--                                        style="font-weight: 600">Robinson</span></span>-->
+<!--                            <div style="display: flex; gap: 29px">-->
+<!--                                <div style="display: flex; align-items: center; gap: 7px">-->
+<!--                                    <img ngSrc="dispatcher.png" height="19" width="17" alt=""/>-->
+<!--                                    <span class="Greg_R__copy_2">Greg R.</span>-->
+<!--                                </div>-->
+<!--                                <div style="display: flex; align-items: center; gap: 6px">-->
+<!--                                    <img ngSrc="truck.png" height="21" width="19" alt=""/>-->
+<!--                                    <span class="Greg_R__copy_2">7994</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div style="margin-left: 95px; margin-top: 18px">-->
+<!--                            <div style="display: flex; align-items: center;">-->
+<!--                                <span class="Gross-4">Gross</span>-->
+<!--                                <div class="Rectangle_3_copy_32">-->
+<!--                                    <div class="Rectangle_3_copy_35" style="width: 578px">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="Rectangle_3_copy_37 Rectangle_3_copy_39">-->
+<!--                                        <span class="_56_">100%</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_41_2 Rectangle_3_copy_43">-->
+<!--                                    <span class="_5_460_4">$7.300</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <span class="miles-5">3.273 miles</span>-->
+<!--                            <div style="display: flex; align-items: center; margin-left: 10px">-->
+<!--                                <span class="Gross-4">RPM</span>-->
+<!--                                <div class="Rectangle_3_copy_32">-->
+<!--                                    <div class="Rectangle_3_copy_35" style="width: 578px">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="Rectangle_3_copy_37 Rectangle_3_copy_39">-->
+<!--                                        <span class="_56_">100%</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_41_2 Rectangle_3_copy_43">-->
+<!--                                    <span class="_5_460_4">$2.23</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div style="display: flex; align-items: center; margin-left: 45px">-->
+<!--                            <div class="Rectangle_3_copy_46 Rectangle_3_copy_45">-->
+<!--                                <img ngSrc="check.png" height="43" width="43" alt=""/>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <span class="_14_pts">+20 pts</span>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="Rectangle_3_copy_40">-->
+<!--        <div class="top-content-wrapper">-->
+<!--            <div class="Rectangle_3_copy_55">-->
+<!--                <img ngSrc="search.png" height="16" width="16" alt="" style="margin-right: 12px"/>-->
+<!--            </div>-->
+<!--            <div class="Rectangle_3_copy_22">-->
+<!--                    <span class="All_time">-->
+<!--                        All time-->
+<!--                    </span>-->
+<!--            </div>-->
+
+<!--            <div class="Rectangle_3_copy_24">-->
+<!--                    <span class="This_week">-->
+<!--                        This week-->
+<!--                    </span>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="table-container-2">-->
+<!--            <div class="table-2">-->
+<!--                <div class="row-2 header-2">-->
+<!--                    <div class="header-cell-2"></div>-->
+<!--                    <div class="header-cell-2" style="margin-left: 7px">Dispatcher</div>-->
+<!--                    <div class="header-cell-2"></div>-->
+<!--                    <div class="header-cell-2">Target achieved</div>-->
+<!--                    <div class="header-cell-2"></div>-->
+<!--                    <div class="header-cell-2">Earnings</div>-->
+<!--                    <div class="header-cell-2"></div>-->
+<!--                    <div class="header-cell-2">Gross pts</div>-->
+<!--                    <div class="header-cell-2"></div>-->
+<!--                    <div class="header-cell-2">RPM pts</div>-->
+<!--                    <div class="header-cell-2" style="margin-right: 20px;"></div>-->
+<!--                    <div class="header-cell-2" style="margin-left: 12px;min-width: 34px">Total pts</div>-->
+<!--                    <div class="header-cell-2"></div>-->
+<!--                </div>-->
+
+<!--                <div class="row-2" *ngFor="let dispatcher of dispatchersData2">-->
+<!--                    <div class="item-cell-2"></div>-->
+<!--                    <div class="item-cell-2"-->
+<!--                         style="font-weight: 600 !important;  text-align: left; margin-left: 21px">{{ dispatcher.name }}-->
+<!--                    </div>-->
+<!--                    <div class="item-cell-2"></div>-->
+<!--                    <div class="item-cell-2">{{ dispatcher.targetAchieved }}</div>-->
+<!--                    <div class="item-cell-2"></div>-->
+<!--                    <div class="item-cell-2">{{ dispatcher.earnings }}</div>-->
+<!--                    <div class="item-cell-2"></div>-->
+<!--                    <div class="item-cell-2">{{ dispatcher.grossPts }}</div>-->
+<!--                    <div class="item-cell-2"></div>-->
+<!--                    <div class="item-cell-2">{{ dispatcher.rpmPts }}</div>-->
+<!--                    <div class="item-cell-2"></div>-->
+<!--                    <div class="item-cell-2 Rectangle_3_copy_63">-->
+<!--                        <div class="totalPts">{{ dispatcher.totalPts }}</div>-->
+<!--                    </div>-->
+<!--                    <div class="item-cell-2"></div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--        <div class="Rectangle_3_copy_97">-->
+<!--            <span class="Set_Target">Set Target</span>-->
+<!--            <div class="Rectangle_3_copy_78">-->
+<!--                <span class="Jul_1___Jul_7_2">Jul 1 - Jul 7</span>-->
+<!--            </div>-->
+<!--            <img class="close" ngSrc="x.png" height="20" width="20" alt=""/>-->
+
+<!--            <div style="display: flex; flex-direction: column; margin-top: 134px ">-->
+
+<!--                <div style="display: flex; align-items: center">-->
+<!--                    <div style="display: flex; align-items: center">-->
+<!--                        <div class="Rectangle_3_copy_94"><span class="_1">1</span></div>-->
+<!--                    </div>-->
+
+<!--                    <div style="margin-right: 15px">-->
+<!--                        <div class="Rectangle_3_copy_84">-->
+<!--                            <div style="display: flex; flex-direction: column; max-width: 167px; align-items: start; gap: 12px">-->
+<!--                                <span class="Condition">Condition</span>-->
+<!--                                <div class="Rectangle_3_copy_83">-->
+<!--                                    <span class="Drivers_performance">Gross</span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_83">-->
+<!--                                    <span class="Drivers_performance">Rate per mile</span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 256px; align-items: start; gap: 12px; margin-left: 11px">-->
+<!--                                <span class="Condition">Based on</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 256px">-->
+<!--                                    <span class="Drivers_performance">Drivers performance</span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 256px">-->
+<!--                                    <span class="Drivers_performance">Custom value</span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 125px; align-items: start; gap: 12px; margin-left: 23px">-->
+<!--                                <span class="Condition">Metrics</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 125px">-->
+<!--                                    <span class="Drivers_performance">Top 10%</span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_83 Rectangle_3_copy_88" style="width: 125px">-->
+<!--                                    <span class="Drivers_performance"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 81px; align-items: start; gap: 12px; margin-left: 9px">-->
+<!--                                <span class="Condition">Period</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 81px">-->
+<!--                                    <span class="Drivers_performance">Week</span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_83 Rectangle_3_copy_88" style="width: 81px">-->
+<!--                                    <span class="Drivers_performance"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 145px; align-items: start; gap: 12px; margin-left: 11px">-->
+<!--                                <span class="Condition">Metrics based on</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 145px">-->
+<!--                                    <span class="Drivers_performance">Jun 24 - Jun 30</span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_83 Rectangle_3_copy_88" style="width: 145px">-->
+<!--                                    <span class="Drivers_performance"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-left: 11px">-->
+<!--                                <span class="Condition" style="margin-left: 0">Target</span>-->
+<!--                                <div class="Rectangle_3_copy_81">-->
+<!--                                    <span class="_6_380">$6.380</span>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_81">-->
+<!--                                    <span class="_6_380">$2.18</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 177px; align-items: start; gap: 12px; margin-left: 13px">-->
+<!--                                <span class="Condition" style="margin-left: 0">Start calculating points after</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 177px">-->
+<!--                                    <span class="Drivers_performance" style="margin-right: 0">0%</span>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 177px">-->
+<!--                                    <span class="Drivers_performance" style="margin-right: 0">50%</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; align-items: flex-end; margin-left: 10px">-->
+<!--                                <div class="Rectangle_3_copy_86">-->
+<!--                                    +-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="Rectangle_3_copy_89">-->
+<!--                            <span class="_2_combined_conditions"><span style="font-weight: 700">2</span> combined conditions</span>-->
+<!--                            <div style="display: flex; align-items: center">-->
+<!--                                <span class="Reward">Reward</span>-->
+<!--                                <div class="Rectangle_3_copy_87">-->
+<!--                                    <span class="_50">$50</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <img ngSrc="dots.png" height="20" width="5" style="margin-bottom: 18px;" alt=""/>-->
+<!--                </div>-->
+
+
+<!--                <div style="display: flex; align-items: center; margin-top: 45px;">-->
+<!--                    <div style="display: flex; align-items: center">-->
+<!--                        <div class="Rectangle_3_copy_94" style="margin-bottom: 8px;"><span class="_1">2</span></div>-->
+<!--                    </div>-->
+
+<!--                    <div style="margin-right: 15px">-->
+<!--                        <div class="Rectangle_3_copy_84" style="height: 64px;">-->
+<!--                            <div style="display: flex; flex-direction: column; max-width: 167px; align-items: start; gap: 12px">-->
+<!--                                <span class="Condition">Condition</span>-->
+<!--                                <div class="Rectangle_3_copy_83">-->
+<!--                                    <span class="Drivers_performance"></span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 256px; align-items: start; gap: 12px; margin-left: 11px">-->
+<!--                                <span class="Condition">Based on</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 256px">-->
+<!--                                    <span class="Drivers_performance"></span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 125px; align-items: start; gap: 12px; margin-left: 23px">-->
+<!--                                <span class="Condition">Metrics</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 125px">-->
+<!--                                    <span class="Drivers_performance"></span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 81px; align-items: start; gap: 12px; margin-left: 9px">-->
+<!--                                <span class="Condition">Period</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 81px">-->
+<!--                                    <span class="Drivers_performance"></span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 145px; align-items: start; gap: 12px; margin-left: 11px">-->
+<!--                                <span class="Condition">Metrics based on</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 145px">-->
+<!--                                    <span class="Drivers_performance"></span>-->
+<!--                                    <img ngSrc="chevron.png" height="8" width="12" alt=""/>-->
+<!--                                </div>-->
+<!--                                <div class="Rectangle_3_copy_83 Rectangle_3_copy_88" style="width: 145px">-->
+<!--                                    <span class="Drivers_performance"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-left: 11px">-->
+<!--                                <span class="Condition" style="margin-left: 0">Target</span>-->
+<!--                                <div class="Rectangle_3_copy_81">-->
+<!--                                    <span class="_6_380"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; flex-direction: column; max-width: 177px; align-items: start; gap: 12px; margin-left: 13px">-->
+<!--                                <span class="Condition" style="margin-left: 0">Start calculating points after</span>-->
+<!--                                <div class="Rectangle_3_copy_83" style="width: 177px">-->
+<!--                                    <span class="Drivers_performance" style="margin-right: 0"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div style="display: flex; align-items: flex-end; margin-left: 10px">-->
+<!--                                <div class="Rectangle_3_copy_86" style="background-color: #f3f8ff; color: #cae0ff">-->
+<!--                                    +-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="Rectangle_3_copy_89">-->
+<!--                            <span class="_2_combined_conditions"><span style="font-weight: 700">1</span> condition</span>-->
+<!--                            <div style="display: flex; align-items: center">-->
+<!--                                <span class="Reward">Reward</span>-->
+<!--                                <div class="Rectangle_3_copy_87">-->
+<!--                                    <span class="_50" style="color: rgb(164, 164, 164);">$0</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <img ngSrc="dots.png" height="20" width="5" style="margin-bottom: 8px;" alt=""/>-->
+<!--                </div>-->
+
+<!--                <div style="display: flex; justify-content: center; margin-top: 24px">-->
+<!--                    <div class="Rectangle_3_copy_96">-->
+<!--                        <span class="Add_target">Add target</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+<!--            <div class="Rectangle_3_copy_98">-->
+<!--                <span class="Confirm">Confirm</span>-->
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </div>-->
+</main>
